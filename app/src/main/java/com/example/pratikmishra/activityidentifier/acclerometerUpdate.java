@@ -31,7 +31,7 @@ public class acclerometerUpdate extends Service implements SensorEventListener {
             values[1] = event.values[1];
             values[2] = event.values[2];
             Intent broadcast = new Intent();
-            broadcast.setAction("com.example.sachin.healthmonitor");
+            broadcast.setAction("com.example.pratikmishra.activityidentifier");
             broadcast.putExtra("xvalue", values[0]);
             broadcast.putExtra("yvalue", values[1]);
             broadcast.putExtra("zvalue", values[2]);
